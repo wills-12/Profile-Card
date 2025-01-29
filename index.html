@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Card</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/dc26d6c0c8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="profile-card">
+      <!-- Profile Image -->
+      <img
+        src="image/IMG-20240611-WA0065.jpg"
+        alt="Profile Picture"
+        class="profile-picture"
+        data-testid="profilePicture"
+      />
+
+      <!-- Profile Details -->
+      <div class="full-name" data-testid="fullName">Godswill Ekpenyong</div>
+      <div class="job-title" data-testid="jobTitle">Front-End Developer</div>
+      <div class="short-bio" data-testid="shortBio">
+        Passionate front-end developer with a knack for creating beautiful,
+        responsive, and user-friendly web applications. I enjoy turning ideas
+        into reality with code.
+      </div>
+      <div class="current-location" data-testid="currentLocation">
+        Akwa-Ibom, Nigeria
+      </div>
+      <div class="email-address" data-testid="emailAddress">
+        ekpenyonggodswill1@gmail.com
+      </div>
+
+      <!-- Social Icons -->
+      <div class="social-links" data-testid="socialLinks">
+        <a
+          href="   
+          https://web.facebook.com/capacity.guy
+          "
+          target="_blank"
+        >
+          <i class="fa-brands fa-facebook" style="color: #105ce0"></i>
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/godswill-ekpenyong-10a264315"
+          target="_blank"
+        >
+          <i class="fa-brands fa-linkedin" style="color: #075ef2"></i>
+        </a>
+        <a href="https://github.com/wills-12" target="_blank">
+          <i class="fa-brands fa-github" style="color: #000000"></i>
+        </a>
+        <a href="https://x.com/willscapacity" target="_blank">
+          <i class="fa-brands fa-x-twitter" style="color: #000000"></i>
+        </a>
+      </div>
+
+      <!-- Time -->
+      <div class="current-time" data-testid="currentTimeUTC">
+        UTC Time: <span id="utcTime"></span>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
