@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 * {
   margin: 0;
   padding: 0;
@@ -121,3 +122,128 @@ a {
     font-size: 0.85rem;
   }
 }
+=======
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0e8e8;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 350px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.profile-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 26%;
+  width: 100%;
+  border-radius: 24px 24px 0 0;
+  background-color: #4070f4;
+}
+
+.profile-picture {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  position: relative;
+  padding: 3px;
+  margin-bottom: 10px;
+  background-color: #4070f4;
+}
+
+.full-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.job-title {
+  color: #555;
+  margin-top: 8px;
+  font-size: 1.1rem;
+}
+
+.short-bio {
+  margin: 15px 0;
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+}
+
+.current-location,
+.email-address {
+  color: #333;
+  font-size: 0.95rem;
+  margin: 5px 0;
+  font-weight: 500;
+}
+
+.profile-card .social-links {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.social-links,
+a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 24px;
+  height: 34px;
+  width: 54px;
+  border-radius: 50%;
+  margin: 0 8px;
+
+  text-decoration: none;
+}
+
+.current-time {
+  font-weight: bold;
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+@media (max-width: 480px) {
+  .profile-card {
+    padding: 15px;
+  }
+
+  .full-name {
+    font-size: 1.2rem;
+  }
+
+  .job-title {
+    font-size: 1rem;
+  }
+
+  .short-bio {
+    font-size: 0.85rem;
+  }
+}
+>>>>>>> a313284 (first commit)
